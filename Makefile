@@ -7,8 +7,7 @@ docker_push: docker_build
 	docker tag hello-world-printer $(TAG); \  
 	docker push $(TAG); \  
 	docker logout;  
-.PHONY:docker_push
- 
+
 deps:
 	pip install -r requirements.txt
 	pip install -r test_requirements.txt
